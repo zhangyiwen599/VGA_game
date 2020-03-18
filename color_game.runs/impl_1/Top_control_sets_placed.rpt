@@ -1,0 +1,71 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Jan 04 12:53:49 2019
+| Host         : LAPTOP-U9SP0IB6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             386 |          132 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |             168 |           47 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              38 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+---------------------------------------------------------+------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                      Enable Signal                      |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++---------------------------------+---------------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                  |                                                         |                                                |                1 |              1 |
+|  game/VGA_Disp/clk_25M          | game/VGA_Disp/hs                                        | game/VGA_Disp/hs_i_1_n_0                       |                1 |              1 |
+|  game/VGA_Disp/clk_50M          |                                                         |                                                |                1 |              1 |
+|  game/VGA_Disp/pe               |                                                         |                                                |                1 |              1 |
+|  VSync_OBUF_BUFG                |                                                         |                                                |                3 |              4 |
+|  game/VGA_Disp/clk_25M          | game/VGA_Disp/Red[2]_i_2_n_0                            | game/VGA_Disp/Red[2]_i_1_n_0                   |                5 |              8 |
+|  game/VGA_Disp/clk_25M          | game/VGA_Disp/Vcnt_3                                    |                                                |                4 |             10 |
+|  game/VGA_Disp/clk_25M          |                                                         |                                                |                7 |             11 |
+|  VSync_OBUF_BUFG                | game/VGA_Disp/right_pos                                 | game/VGA_Disp/lose                             |                7 |             13 |
+| ~VSync_OBUF_BUFG                |                                                         |                                                |                6 |             13 |
+|  VSync_OBUF_BUFG                | game/VGA_Disp/ball_y_pos_1                              | game/VGA_Disp/lose                             |                4 |             16 |
+|  identify_color_init/r_counter0 | color_sensor/white_balance_init/E[0]                    |                                                |               11 |             30 |
+|  identify_color_init/r_counter0 |                                                         |                                                |               15 |             33 |
+|  identify_color_init/counter0   |                                                         | color_sensor/identify_color_init/reset_reg_n_0 |               16 |             64 |
+|  white_balance_init/counter0    |                                                         |                                                |               16 |             64 |
+|  white_balance_init/r_counter0  | color_sensor/white_balance_init/B_time[63]_i_1_n_0      |                                                |               16 |             64 |
+|  white_balance_init/r_counter0  | color_sensor/white_balance_init/b_counter[0]_i_1__0_n_0 |                                                |               16 |             64 |
+|  white_balance_init/r_counter0  |                                                         |                                                |               82 |            258 |
++---------------------------------+---------------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 23 15:10:41 2018
+# Process ID: 20196
+# Current directory: E:/shuziluoji/color_game/color_game.runs/impl_1
+# Command line: vivado.exe -log Top.vdi -applog -messageDb vivado.pb -mode batch -source Top.tcl -notrace
+# Log file: E:/shuziluoji/color_game/color_game.runs/impl_1/Top.vdi
+# Journal file: E:/shuziluoji/color_game/color_game.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
