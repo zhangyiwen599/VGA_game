@@ -13,7 +13,7 @@
 
 **使用说明**：下板后应先将颜色传感器倒置于一张白纸上以便进行白平衡。如下图所示
 
-![clip_image004](https://github.com/zhangyiwen599/VGA_game/edit/master/assets/clip_image004-1584540184486.jpg)
+![clip_image004](https://github.com/zhangyiwen599/VGA_game/raw/master/assets/clip_image004-1584540184486.jpg)
 
 白平衡后，vga开始显示画面，按下FPGA板上的N17按钮即可开始游戏。开始游戏后，通过颜色传感器对颜色的感知来控制板子的移动（白色向左，黑色向右）。若没有接住小球，则游戏失败，失败后则返回初始状态，按N17按钮重新开始。
 
@@ -59,7 +59,7 @@
 
 此模块负责根据游戏逻辑传给它的位置等信息在VGA上显示游戏中需要的各个物体。
 
- ![clip_image009](https://github.com/zhangyiwen599/VGA_game/edit/master/assets/clip_image009.jpg)
+ ![clip_image009](https://github.com/zhangyiwen599/VGA_game/raw/master/assets/clip_image009.jpg)
 
  
 
@@ -186,11 +186,11 @@ VGA场同步信号，VGA颜色信号，游戏失败信号。
 
 
 
- ![clip_image025](https://github.com/zhangyiwen599/VGA_game/edit/master/assets/clip_image025.jpg)
+ ![clip_image025](https://github.com/zhangyiwen599/VGA_game/raw/master/assets/clip_image025.jpg)
 
  
 
- ![clip_image027](https://github.com/zhangyiwen599/VGA_game/edit/masterassets/clip_image027.jpg)
+ ![clip_image027](https://github.com/zhangyiwen599/VGA_game/raw/masterassets/clip_image027.jpg)
 
 五、   心得体会及建议
 
